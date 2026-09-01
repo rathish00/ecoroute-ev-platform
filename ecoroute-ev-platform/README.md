@@ -2,9 +2,7 @@
 
 **An enterprise-grade backend for electric-vehicle commercial fleets, fusing Graph Theory, Machine Learning, and Mathematical Optimization to minimize energy consumption, protect long-term battery health, and prevent charging-grid congestion.**
 
-[![CI](https://img.shields.io/github/actions/workflow/status/YOUR_USERNAME/ecoroute-ev-platform/ci.yml?label=CI)](https://github.com/YOUR_USERNAME/ecoroute-ev-platform/actions)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 
 ---
 
