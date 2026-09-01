@@ -1,0 +1,44 @@
+# config.yaml
+# Central place for tunable platform parameters. The codebase reads
+# sensible defaults directly in each module (see docstrings), so this file
+# doubles as documentation of every knob available for a production
+# deployment -- wire it up with PyYAML + your favourite config-loader
+# (e.g. Hydra, dynaconf) as the project grows.
+
+vehicle_profile:
+  mass_kg: 3200
+  max_cargo_kg: 1200
+  drag_coefficient: 0.36
+  frontal_area_m2: 5.2
+  rolling_resistance_coeff: 0.010
+  drivetrain_efficiency: 0.88
+  regen_efficiency: 0.55
+  battery_capacity_kwh: 82.0
+
+soh_policy:
+  fast_charge_block_threshold: 0.85
+  hard_block_threshold: 0.70
+  gentle_routing_threshold: 0.85
+
+ml_model:
+  backend_preference: ["xgboost", "sklearn_gbr"]
+  n_estimators: 400
+  max_depth: 6
+  learning_rate: 0.05
+
+grid_dispatcher:
+  wait_cost_weight: 0.15
+  price_cost_weight: 1.0
+  travel_cost_weight: 1.0
+
+nash_game:
+  max_iterations: 25
+  congestion_sensitivity_default: 0.05
+
+simulation:
+  low_soc_threshold_frac: 0.25
+  default_grid_rows: 10
+  default_grid_cols: 10
+
+weather_fusion:
+  hex_resolution: 8

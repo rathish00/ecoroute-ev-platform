@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# Trained model artifacts (regenerate with `python -m ecoroute.ml.train`)
+models/*.bin
+models/*.json
+!models/.gitkeep
+
+# Generated sample data (regenerate with training/simulation scripts)
+data/sample/*.csv
+data/sample/*.jsonl
+!data/sample/.gitkeep
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
